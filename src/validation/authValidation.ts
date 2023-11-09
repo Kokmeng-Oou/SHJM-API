@@ -27,33 +27,16 @@ export const registerSchema = Joi.object({
 })
 
 export const loginSchema = Joi.object({
-  email: Joi.string()
-    .email()
-    .required()
-    .messages({
-      'string.email': 'Please provide a valid email address',
-    })
-    .external(async (value) => {
-      // Check if the email is already taken
-      try {
-        const User = await userModel.findOne({ email: value })
-        if (!User) throw new Error('Email do not exits')
-      } catch (error) {
-        throw error
-      }
-    }),
+  email: Joi.string().email().required().messages({
+    'string.email': 'Please provide a valid email address',
+  }),
   password: Joi.string()
     .min(8)
     .regex(/\d/)
     .regex(/[a-z]/)
     .regex(/[A-Z]/)
     .regex(/[^a-zA-Z0-9]/)
-    .required()
-    .messages({
-      'string.min': 'Password must be at least 8 characters long',
-      'string.pattern.base':
-        'Password must contain a number, a lowercase letter, an uppercase letter and a special character',
-    }),
+    .required(),
 })
 
 // Define the set reset password schema
