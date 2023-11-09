@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import cookieParser from 'cookie-parser'
+// import cookieParser from 'cookie-parser'
 import helmet from 'helmet'
 
 // connect db
@@ -11,7 +11,7 @@ import './config/dotenv'
 const app: express.Application = express()
 app.use(cors())
 app.use(express.json())
-app.use(cookieParser(process.env.COOKIE_SECRET))
+// app.use(cookieParser(process.env.COOKIE_SECRET))
 app.use(helmet())
 
 const port: number = 5000
