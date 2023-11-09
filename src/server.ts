@@ -24,6 +24,19 @@ app.get('/', (req: express.Request, res: express.Response) => {
   return res.status(200).json({ data: data, env: (process.env as any).TESTING })
 })
 
+app.get(
+  `${process.env.PORT}`,
+  (req: express.Request, res: express.Response) => {
+    const data: any[] = [
+      { id: 1, name: 'John', age: 30 },
+      { id: 2, name: 'Jane', age: 25 },
+    ]
+    return res
+      .status(200)
+      .json({ data: data, env: (process.env as any).TESTING })
+  }
+)
+
 // app.use(`${(process.env as any).API_URL}/auth`, authRoutes)
 
 async function runServer(): Promise<void> {
