@@ -3,6 +3,7 @@ import userModel from '../model/userModel'
 import { BadRequestError, UnauthenticatedError } from '../err'
 import createTokenUser from '../utils/createTokenUser'
 import { attachCookiesToResponse } from '../utils/jwt'
+import { StatusCodes } from 'http-status-codes'
 
 export const register = async (req: express.Request, res: express.Response) => {
   try {
@@ -35,5 +36,19 @@ export const login = async (req: express.Request, res: express.Response) => {
     return res.status(200).json({ message: 'Login Success', data: tokenUser })
   } catch (error) {
     res.status(403).json({ msg: `${(error as any).message}` })
+  }
+}
+
+export const logout = async (
+  req: express.Request,
+  res: express.Response
+): Promise<void> => {
+  try {
+    res
+      .clearCookie('token')
+      .status(StatusCodes.NO_CONTENT)
+      .json({ msg: 'Logout Success' })
+  } catch (error) {
+    res.status(500).json({ msg: (error as any).message })
   }
 }
