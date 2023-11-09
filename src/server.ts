@@ -14,7 +14,7 @@ app.use(express.json())
 app.use(cookieParser(process.env.COOKIE_SECRET))
 // app.use(helmet())
 
-const port: number = 5000
+const port: string | number | undefined = process.env.PORT
 
 app.get('/', (req: express.Request, res: express.Response) => {
   const data: any[] = [
