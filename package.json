@@ -24,7 +24,7 @@
     "joi": "^17.11.0",
     "joi-extract-type": "^15.0.8",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.0.0",
+    "mongoose": "6.12.3",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
