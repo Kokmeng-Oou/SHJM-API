@@ -16,16 +16,13 @@ app.use(express.json())
 
 const port: number = 5000
 
-app.get(
-  (process.env as any).API_URL,
-  (req: express.Request, res: express.Response) => {
-    const data: any[] = [
-      { id: 1, name: 'John', age: 30 },
-      { id: 2, name: 'Jane', age: 25 },
-    ]
-    return res.status(200).send({ data })
-  }
-)
+app.get('/', (req: express.Request, res: express.Response) => {
+  const data: any[] = [
+    { id: 1, name: 'John', age: 30 },
+    { id: 2, name: 'Jane', age: 25 },
+  ]
+  return res.status(200).json({ data: data, env: process.env.Testing })
+})
 
 // app.use(`${(process.env as any).API_URL}/auth`, authRoutes)
 
