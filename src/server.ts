@@ -28,7 +28,7 @@ app.use(`${process.env.API_URL}/auth`, authRoutes)
 
 async function runServer(): Promise<void> {
   try {
-    await connectDB((process.env as any).CONNECT_DB_URL)
+    await connectDB()
     app.listen(port, () => {
       console.log(`Server is running on port http://localhost:${port}`)
     })

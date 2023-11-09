@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
 
-export default function connectDB(url: string): Promise<typeof mongoose> {
-  return mongoose.connect(url)
+export default function connectDB(): Promise<typeof mongoose> {
+  return mongoose.connect((process.env as any).CONNECT_DB_URL)
 }
