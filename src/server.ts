@@ -6,7 +6,7 @@ import helmet from 'helmet'
 // connect db
 import connectDB from './config/db_connect'
 import './config/dotenv'
-import authRoutes from './routes/authRoutes'
+// import authRoutes from './routes/authRoutes'
 
 const app: express.Application = express()
 app.use(cors())
@@ -14,7 +14,7 @@ app.use(express.json())
 app.use(cookieParser(process.env.COOKIE_SECRET))
 app.use(helmet())
 
-const port: number = 3000 || 5000
+const port: number = 5000
 
 app.get(
   (process.env as any).API_URL,
@@ -27,7 +27,7 @@ app.get(
   }
 )
 
-app.use(`${(process.env as any).API_URL}/auth`, authRoutes)
+// app.use(`${(process.env as any).API_URL}/auth`, authRoutes)
 
 async function runServer(): Promise<void> {
   try {

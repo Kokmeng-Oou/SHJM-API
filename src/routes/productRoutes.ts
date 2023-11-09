@@ -1,9 +1,9 @@
-import express from 'express'
+// import express from 'express'
 
-const router = express.Router()
+// const router = express.Router()
 
-router.route('/').get().post
-router.route('/search').get()
-router.route('/:id').get().patch().delete
+// router.route('/').get().post
+// router.route('/search').get()
+// router.route('/:id').get().patch().delete
 
-export default router
+// export default router
