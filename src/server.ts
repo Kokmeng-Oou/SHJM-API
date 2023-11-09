@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser'
 // import helmet from 'helmet'
 
 // connect db
-// import connectDB from './config/db_connect'
+import connectDB from './config/db_connect'
 import './config/dotenv'
 import authRoutes from './routes/authRoutes'
 
@@ -28,7 +28,7 @@ app.use(`${process.env.API_URL}/auth`, authRoutes)
 
 async function runServer(): Promise<void> {
   try {
-    // await connectDB((process.env as any).CONNECT_DB_URL)
+    await connectDB((process.env as any).CONNECT_DB_URL)
     app.listen(port, () => {
       console.log(`Server is running on port http://localhost:${port}`)
     })
