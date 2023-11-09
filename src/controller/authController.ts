@@ -1,5 +1,5 @@
 import express from 'express'
-import userModel from '../model/userModel'
+// import userModel from '../model/userModel'
 import { BadRequestError, UnauthenticatedError } from '../err'
 // import createTokenUser from '../utils/createTokenUser'
 // import { attachCookiesToResponse } from '../utils/jwt'
