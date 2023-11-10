@@ -46,7 +46,11 @@ export const fetchSingleProduct = async (
   res: express.Response
 ): Promise<void> => {
   try {
-    res.send('fetch single product')
+    const productID = req.params?.id
+    if (!productID) throw new BadRequestError('Invalid request')
+    const singleProduct = await productModel.findById({ _id: productID })
+    if (!singleProduct) throw new BadRequestError('No such product exists')
+    res.status(StatusCodes.OK).json({ status: 'success', data: singleProduct })
   } catch (error) {
     res.status(StatusCodes.BAD_REQUEST).json({ msg: error })
   }
@@ -76,9 +80,10 @@ export const searchProduct = async (
       status: 'success',
       data: fetchSearchProduct,
       meta: {
-        currentPage: page,
-        perPage: limit,
-        totalPages: Math.ceil(count / limit),
+        page: page,
+        limit: limit,
+        total: fetchSearchProduct.length,
+        pages: Math.ceil(fetchSearchProduct.length / limit),
       },
     })
   } catch (error) {
