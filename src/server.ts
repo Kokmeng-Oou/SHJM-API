@@ -1,18 +1,19 @@
 import express from 'express'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
-// import helmet from 'helmet'
+import helmet from 'helmet'
 
 // connect db
 import connectDB from './config/db_connect'
 import './config/dotenv'
+import 'express-async-errors'
 import authRoutes from './routes/authRoutes'
 
 const app: express.Application = express()
 app.use(cors())
 app.use(express.json())
 app.use(cookieParser(process.env.COOKIE_SECRET))
-// app.use(helmet())
+app.use(helmet())
 
 const port: string | number | undefined = process.env.PORT
 

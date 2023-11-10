@@ -39,8 +39,13 @@ export const loginSchema = Joi.object({
     .required(),
 })
 
-// Define the set reset password schema
-export const setResetPasswordSchema = Joi.object({
-  password: Joi.string().min(6).max(128).required(),
-  resetToken: Joi.string().hex().length(32).required(),
-})
+// export const setForgotPasswordSchema = Joi.object({
+//   token: Joi.string().hex().length(24).required(),
+//   newPassword: Joi.string()
+// })
+
+// // Define the set reset password schema
+// export const setResetPasswordSchema = Joi.object({
+//   password: Joi.string().min(6).max(128).required(),
+//   resetToken: Joi.string().hex().length(32).required(),
+// })

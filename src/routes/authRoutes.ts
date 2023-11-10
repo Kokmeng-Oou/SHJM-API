@@ -4,6 +4,8 @@ import {
   login,
   logout,
   verifyEmail,
+  forgotPassword,
+  resetPassword,
 } from '../controller/authController'
 import {
   validateRegister,
@@ -17,5 +19,7 @@ router.post('/register', validateRegister, register)
 router.post('/login', validateLogin, login)
 router.delete('/logout', authenticationUser, logout)
 router.post('/verify-email', verifyEmail)
+router.post('/reset-password', resetPassword)
+router.post('/forgot-password', forgotPassword)
 
 export default router

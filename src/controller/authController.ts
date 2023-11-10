@@ -7,6 +7,8 @@ import { StatusCodes } from 'http-status-codes'
 
 import crypto from 'crypto'
 import sendVerificationEmail from '../utils/sendVerificationEmail'
+import sendResetPasswordEmail from '../utils/sendResetPasswordEmail'
+import createHash from '../utils/createHash'
 import tokenModel from '../model/tokenModel'
 
 export const register = async (req: express.Request, res: express.Response) => {
@@ -124,4 +126,54 @@ export const logout = async (
   } catch (err) {
     console.log(`[ERROR] ${err}`)
   }
+}
+
+export const forgotPassword = async (
+  req: express.Request,
+  res: express.Response
+) => {
+  const { email } = req.body
+  if (!email) throw new BadRequestError('Please provide valid email')
+  const user = await userModel.findOne({ email })
+  if (user) {
+    const passwordToken = crypto.randomBytes(70).toString('hex')
+    const origin = `http://localhost:3000/`
+    await sendResetPasswordEmail({
+      name: user.name,
+      email: user.email,
+      token: passwordToken,
+      origin: origin,
+    })
+    const tenMin = 1000 * 60 * 10
+    const passwordTokenExpiresAt = new Date(Date.now() + tenMin)
+    ;(user as any).passwordToken = createHash(passwordToken)
+    ;(user as any).passwordTokenExpiresAt = passwordTokenExpiresAt
+    await user.save()
+  }
+  res
+    .status(StatusCodes.OK)
+    .json({ msg: 'Please check your email for reset password link' })
+}
+
+export const resetPassword = async (
+  req: express.Request,
+  res: express.Response
+) => {
+  const { token, email, password } = req.body
+  if (!token || !email || !password)
+    throw new BadRequestError('Please provide all values')
+  const user = await userModel.findOne({ email })
+  if (user) {
+    const currentDate: Date = new Date()
+    if (
+      user.passwordToken === createHash(token) &&
+      (user as any).passwordTokenExpiresAt > currentDate
+    ) {
+      user.password = password
+      ;(user as any).passwordToken = null
+      ;(user as any).passwordTokenExpiresAt = null
+      await user.save()
+    }
+  }
+  res.send('reset password')
 }

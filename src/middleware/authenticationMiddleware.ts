@@ -36,6 +36,14 @@ export async function validateLogin(
   }
 }
 
+// export async function validateForgetPassword(
+//   req: express.Request,
+//   res: express.Response,
+//   next: express.NextFunction
+// ) {
+
+// }
+
 export const authenticationUser = async (
   req: express.Request,
   res: express.Response,
