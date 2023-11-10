@@ -17,6 +17,8 @@ import {
 import {
   validationCreateProductSchema,
   validationPagination,
+  validationProductIdSchema,
+  validationUpdateProductSchema,
 } from '../middleware/productMiddleware'
 
 const router = express.Router()
@@ -41,7 +43,22 @@ router.get(
 router
   .route('/:id')
   .get(fetchSingleProduct)
-  .patch([authenticationUser, authorizePermissions('admin')], updateProduct)
-  .delete([authenticationUser, authorizePermissions('admin')], deleteProduct)
+  .patch(
+    [
+      authenticationUser,
+      authorizePermissions('admin'),
+      validationProductIdSchema,
+      validationUpdateProductSchema,
+    ],
+    updateProduct
+  )
+  .delete(
+    [
+      authenticationUser,
+      authorizePermissions('admin'),
+      validationProductIdSchema,
+    ],
+    deleteProduct
+  )
 
 export default router

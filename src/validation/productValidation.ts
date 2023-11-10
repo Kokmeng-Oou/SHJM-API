@@ -31,7 +31,6 @@ export const searchProductSchema = Joi.object({
 })
 
 export const updateProductSchema = Joi.object({
-  id: Joi.string().hex().required(),
   brand: Joi.string().valid('Honda', 'Yamaha', 'Suzuki').optional(),
   modelName: Joi.string().optional(),
   image: Joi.string().optional(),

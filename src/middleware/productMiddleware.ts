@@ -9,7 +9,7 @@ import {
 } from '../validation/productValidation'
 
 import { BadRequestError } from '../err'
-import paginationQuerySchema from '../validation/paginationvalidation'
+import paginationQuerySchema from '../validation/paginationValidation'
 import { fetchPaginationQuery } from '../utils/pagination'
 
 export async function validationCreateProductSchema(
@@ -59,7 +59,7 @@ export async function validationUpdateProductSchema(
   next: express.NextFunction
 ) {
   try {
-    await updateProductSchema.validateAsync({ body: req.body })
+    await updateProductSchema.validateAsync(req.body)
     next()
   } catch (error) {
     throw new BadRequestError('Invalid data')
@@ -72,7 +72,7 @@ export async function validationProductIdSchema(
   next: express.NextFunction
 ) {
   try {
-    await productIdSchema.validateAsync({ body: req.body })
+    await productIdSchema.validateAsync(req.params)
     next()
   } catch (error) {
     throw new BadRequestError('Invalid data')

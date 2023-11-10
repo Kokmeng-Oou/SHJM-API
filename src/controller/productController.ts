@@ -68,7 +68,20 @@ export const updateProduct = async (
   res: express.Response
 ): Promise<void> => {
   try {
-    res.send('update product')
+    const productsId = req.params?.id
+    if (!productsId) throw new BadRequestError('Please provide valid product')
+    const findProducts = await productModel.findOne({ _id: productsId })
+    if (!findProducts) throw new BadRequestError('product does not exist')
+    const updateProduct = await productModel.findOneAndUpdate(
+      { _id: findProducts._id },
+      { $set: req.body },
+      { new: true, runValidators: true }
+    )
+    if (!updateProduct)
+      throw new BadRequestError('Failed to update the product')
+    res
+      .status(StatusCodes.ACCEPTED)
+      .json({ status: 'success', data: updateProduct })
   } catch (error) {
     res.status(StatusCodes.BAD_REQUEST).json({ msg: error })
   }
@@ -79,7 +92,17 @@ export const deleteProduct = async (
   res: express.Response
 ): Promise<void> => {
   try {
-    res.send('delete product')
+    const productsId = req.params?.id
+    if (!productsId) throw new BadRequestError('Invalid request')
+    const findProducts = await productModel.findOne({ _id: productsId })
+    const deletedProduct = await productModel.deleteOne({
+      _id: (findProducts as any)._id,
+    })
+    if (!deletedProduct)
+      throw new BadRequestError('Failed to delete the product')
+    res
+      .status(StatusCodes.OK)
+      .json({ status: 'Successfully deleted the product' })
   } catch (error) {
     res.status(StatusCodes.BAD_REQUEST).json({ msg: error })
   }
