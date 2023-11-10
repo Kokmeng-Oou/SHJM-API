@@ -8,13 +8,14 @@ import {
 import {
   validateRegister,
   validateLogin,
+  authenticationUser,
 } from '../middleware/authenticationMiddleware'
 
 const router = express.Router()
 
-router.post('/register', register)
-router.post('/login', login)
-router.post('/logout', logout)
+router.post('/register', validateRegister, register)
+router.post('/login', validateLogin, login)
+router.delete('/logout', authenticationUser, logout)
 router.post('/verify-email', verifyEmail)
 
 export default router

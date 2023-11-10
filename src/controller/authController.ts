@@ -6,6 +6,8 @@ import { attachCookiesToResponse } from '../utils/jwt'
 import { StatusCodes } from 'http-status-codes'
 
 import crypto from 'crypto'
+import sendVerificationEmail from '../utils/sendVerificationEmail'
+import tokenModel from '../model/tokenModel'
 
 export const register = async (req: express.Request, res: express.Response) => {
   try {
@@ -20,11 +22,16 @@ export const register = async (req: express.Request, res: express.Response) => {
       role,
       verificationToken,
     })
-    // const tokenUser = createTokenUser(user)
-    // attachCookiesToResponse({ res, user: tokenUser })
+    const origin = req.get('origin') as string
+    await sendVerificationEmail({
+      name: user.name,
+      email: user.email,
+      verification: user.verificationToken,
+      origin: origin,
+    })
+
     return res.status(201).json({
       message: 'Register Success! Please check your email to verify account',
-      verificationToken: verificationToken,
     })
   } catch (error) {
     res.status(409).json({ msg: `${(error as any).message}` })
@@ -71,8 +78,29 @@ export const login = async (req: express.Request, res: express.Response) => {
     if (!user?.isVerified)
       throw new UnauthenticatedError('Please verify your email')
     const tokenUser = createTokenUser(user)
-    attachCookiesToResponse({ res, user: tokenUser })
-    return res.status(200).json({ message: 'Login Success', data: tokenUser })
+    // create refresh token
+    let refreshToken = ''
+    // check for existing token
+    const existingToken = await tokenModel.findOne({ user: user._id })
+
+    if (existingToken !== null) {
+      const { isValid } = existingToken
+      if (!isValid) {
+        throw new UnauthenticatedError('Invalid Credentials')
+      }
+      refreshToken = existingToken.refreshToken
+      attachCookiesToResponse({ res, user: tokenUser, refreshToken })
+      return res.status(200).json({ message: 'Login Success', data: tokenUser })
+    }
+    refreshToken = crypto.randomBytes(40).toString('hex')
+    const userAgent = req.headers['user-agent']
+    const ip = req.ip
+    const userToken = { refreshToken, ip, userAgent, user: user._id }
+    await tokenModel.create(userToken)
+    attachCookiesToResponse({ res, user: tokenUser, refreshToken })
+    return res
+      .status(StatusCodes.OK)
+      .json({ message: 'Login Success', data: tokenUser })
   } catch (error) {
     res.status(403).json({ msg: `${(error as any).message}` })
   }
@@ -83,10 +111,16 @@ export const logout = async (
   res: express.Response
 ): Promise<void> => {
   try {
-    res
-      .clearCookie('token')
-      .status(StatusCodes.NO_CONTENT)
-      .json({ msg: 'Logout Success' })
+    await tokenModel.findOneAndDelete({ user: (req as any).user.user })
+    res.cookie('accessToken', 'logout', {
+      httpOnly: true,
+      expires: new Date(Date.now()),
+    })
+    res.cookie('refreshTokenJWT', 'logout', {
+      httpOnly: true,
+      expires: new Date(Date.now()),
+    })
+    res.status(StatusCodes.NO_CONTENT).json({ msg: 'Logout Success' })
   } catch (err) {
     console.log(`[ERROR] ${err}`)
   }

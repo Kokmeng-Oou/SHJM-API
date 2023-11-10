@@ -1,6 +1,8 @@
 import express from 'express'
 import { loginSchema, registerSchema } from '../validation/authValidation'
-import { BadRequestError } from '../err'
+import { BadRequestError, UnauthenticatedError } from '../err'
+import { attachCookiesToResponse, isTokenValid } from '../utils/jwt'
+import tokenModel from '../model/tokenModel'
 
 export async function validateRegister(
   req: express.Request,
@@ -39,6 +41,28 @@ export const authenticationUser = async (
   res: express.Response,
   next: express.NextFunction
 ) => {
+  const { refreshToken, accessToken }: any = req.signedCookies
+
   try {
-  } catch (error) {}
+    if (accessToken) {
+      const payload = isTokenValid(accessToken) as any
+      ;(req as any).user = payload.user
+      return next()
+    }
+    const payload = isTokenValid(refreshToken) as any
+    const existingToken = await tokenModel.findOne({
+      user: payload?.user?.user,
+      refreshToken: payload.refreshToken,
+    })
+    if (!existingToken || !existingToken?.isValid) {
+      throw new UnauthenticatedError('Authentication Invalid')
+    }
+    const { user } = payload
+    const existingRefreshToken = existingToken.refreshToken
+    attachCookiesToResponse({ res, user, existingRefreshToken })
+    ;(req as any).user = payload.user
+    next()
+  } catch (error) {
+    throw new UnauthenticatedError('Authentication Invalid')
+  }
 }
