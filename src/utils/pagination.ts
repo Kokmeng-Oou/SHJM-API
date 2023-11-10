@@ -4,6 +4,7 @@ type paginationObject = {
   sort: string
   order: string
   filter: {
+    keyword: string
     color: string
     brand: string
     condition: number

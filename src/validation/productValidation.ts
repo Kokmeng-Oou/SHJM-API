@@ -23,13 +23,6 @@ export const createProductSchema = Joi.object({
   permission: Joi.string().valid('guest', 'member').required(),
 })
 
-export const searchProductSchema = Joi.object({
-  keyword: Joi.string(),
-  pageNumber: Joi.number().integer().default(1),
-  itemsPerPage: Joi.number().integer().default(25),
-  sortBy: Joi.string().valid('price-ascending', 'price-descending'),
-})
-
 export const updateProductSchema = Joi.object({
   brand: Joi.string().valid('Honda', 'Yamaha', 'Suzuki').optional(),
   modelName: Joi.string().optional(),

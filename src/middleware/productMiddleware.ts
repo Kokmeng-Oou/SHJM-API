@@ -2,7 +2,7 @@ import express from 'express'
 
 import {
   createProductSchema,
-  searchProductSchema,
+  //   searchProductSchema,
   updateProductSchema,
   productIdSchema,
   memberAccessProductSchema,
@@ -34,19 +34,6 @@ export async function validationPagination(
     const result = await paginationQuerySchema.validateAsync(req.query)
     const { query, options } = fetchPaginationQuery(result)
     ;(req as any).paginationOptionsAndQuery = { result, query, options }
-    next()
-  } catch (error) {
-    throw new BadRequestError('Invalid data')
-  }
-}
-
-export async function validationSearchProductSchema(
-  req: express.Request,
-  res: express.Response,
-  next: express.NextFunction
-) {
-  try {
-    await searchProductSchema.validateAsync({ id: req.params })
     next()
   } catch (error) {
     throw new BadRequestError('Invalid data')
