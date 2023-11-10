@@ -1,0 +1,142 @@
+[
+  {
+    "brand": "Yamaha",
+    "modelName": "Nouvo SX 125cc",
+    "image": "/upload/image/example2.jpg",
+    "price": 950,
+    "inventory": 15,
+    "yearOfManufacture": 2001,
+    "color": ["blue", "white", "black"],
+    "condition": 70,
+    "madeFrom": "Thailand",
+    "additionalInformation": "",
+    "tel": "0987654321",
+    "permission": "guest"
+  },
+
+  {
+    "brand": "Suzuki",
+    "modelName": "Hayate 125cc",
+    "image": "/upload/image/example3.jpg",
+    "price": 900,
+    "inventory": 10,
+    "yearOfManufacture": 2002,
+    "color": ["silver", "gold", "brown"],
+    "condition": 80,
+    "madeFrom": "Vietnam",
+    "tel": "0976543210",
+    "permission": "guest"
+  },
+
+  {
+    "brand": "Honda",
+    "modelName": "Wave 110cc",
+    "image": "/upload/image/example4.jpg",
+    "price": 800,
+    "inventory": 25,
+    "yearOfManufacture": 1999,
+    "color": ["red", "yellow", "orange"],
+    "condition": 50,
+    "madeFrom": "Japan",
+    "tel": "0965432109",
+    "permission": "guest"
+  },
+
+  {
+    "brand": "Yamaha",
+    "modelName": "Mio 115cc",
+    "image": "/upload/image/example5.jpg",
+    "price": 850,
+    "inventory": 20,
+    "yearOfManufacture": 2000,
+    "color": ["pink", "purple", "white"],
+    "condition": 60,
+    "madeFrom": "Thailand",
+    "tel": "0954321098",
+    "permission": "guest"
+  },
+
+  {
+    "brand": "Suzuki",
+    "modelName": "Viva 115cc",
+    "image": "/upload/image/example6.jpg",
+    "price": 750,
+    "inventory": 30,
+    "yearOfManufacture": 1998,
+    "color": ["green", "black", "white"],
+    "condition": 40,
+    "madeFrom": "Vietnam",
+    "tel": "0943210987",
+    "permission": "guest"
+  },
+
+  {
+    "brand": "Honda",
+    "modelName": "Dream 125cc",
+    "image": "/upload/image/example7.jpg",
+    "price": 1000,
+    "inventory": 5,
+    "yearOfManufacture": 2003,
+    "color": ["black", "red", "silver"],
+    "condition": 90,
+    "madeFrom": "Japan",
+    "tel": "0932109876",
+    "permission": "guest"
+  },
+
+  {
+    "brand": "Yamaha",
+    "modelName": "Sirius 115cc",
+    "image": "/upload/image/example8.jpg",
+    "price": 900,
+    "inventory": 10,
+    "yearOfManufacture": 2002,
+    "color": ["blue", "black", "silver"],
+    "condition": 80,
+    "madeFrom": "Thailand",
+    "tel": "0921098765",
+    "permission": "guest"
+  },
+
+  {
+    "brand": "Suzuki",
+    "modelName": "Revo 110cc",
+    "image": "/upload/image/example9.jpg",
+    "price": 800,
+    "inventory": 15,
+    "yearOfManufacture": 2001,
+    "color": ["red", "white", "black"],
+    "condition": 70,
+    "madeFrom": "Vietnam",
+    "tel": "0910987654",
+    "permission": "guest"
+  },
+
+  {
+    "brand": "Honda",
+    "modelName": "Air Blade 125cc",
+    "image": "/upload/image/example10.jpg",
+    "price": 1100,
+    "inventory": 3,
+    "yearOfManufacture": 2004,
+    "color": ["white", "black", "silver"],
+    "condition": 95,
+    "madeFrom": "Japan",
+    "tel": "0909876543",
+    "permission": "guest"
+  },
+
+  {
+    "brand": "Yamaha",
+    "modelName": "Exciter 150cc",
+    "image": "/upload/image/example11.jpg",
+    "price": 1200,
+    "inventory": 2,
+    "yearOfManufacture": 2005,
+    "color": ["black", "red", "yellow"],
+    "condition": 100,
+    "madeFrom": "Thailand",
+    "tel": "0898765432",
+    "permission": "guest"
+  }
+]

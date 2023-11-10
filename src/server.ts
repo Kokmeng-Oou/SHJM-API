@@ -7,7 +7,14 @@ import helmet from 'helmet'
 import connectDB from './config/db_connect'
 import './config/dotenv'
 import 'express-async-errors'
+
+//middleware
+import NotFoundError from './err/not-found'
+import errorHandlerMiddleware from './err/error-handler'
+
+// routes
 import authRoutes from './routes/authRoutes'
+import productRoutes from './routes/productRoutes'
 
 const app: express.Application = express()
 app.use(cors())
@@ -26,6 +33,10 @@ app.get('/', (req: express.Request, res: express.Response) => {
 })
 
 app.use(`${process.env.API_URL}/auth`, authRoutes)
+app.use(`${process.env.API_URL}/product`, productRoutes)
+
+// set middleware
+app.use(errorHandlerMiddleware)
 
 async function runServer(): Promise<void> {
   try {

@@ -1,6 +1,10 @@
 import express from 'express'
 import { loginSchema, registerSchema } from '../validation/authValidation'
-import { BadRequestError, UnauthenticatedError } from '../err'
+import {
+  BadRequestError,
+  UnauthenticatedError,
+  UnauthorizedError,
+} from '../err'
 import { attachCookiesToResponse, isTokenValid } from '../utils/jwt'
 import tokenModel from '../model/tokenModel'
 
@@ -72,5 +76,22 @@ export const authenticationUser = async (
     next()
   } catch (error) {
     throw new UnauthenticatedError('Authentication Invalid')
+  }
+}
+
+export const authorizePermissions = (roles: string) => {
+  return async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ): Promise<void> => {
+    // Get permissions from request body
+    try {
+      if (!roles.includes((req as any).user.role))
+        throw new UnauthorizedError('Unauthorized to access this route')
+      next()
+    } catch (error) {
+      throw new UnauthorizedError('Unauthorized to access this route')
+    }
   }
 }

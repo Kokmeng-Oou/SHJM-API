@@ -1,15 +1,15 @@
+import crypto from 'crypto'
 import express from 'express'
-import userModel from '../model/userModel'
+import { StatusCodes } from 'http-status-codes'
 import { BadRequestError, UnauthenticatedError } from '../err'
+
+import userModel from '../model/userModel'
+import tokenModel from '../model/tokenModel'
+import createHash from '../utils/createHash'
 import createTokenUser from '../utils/createTokenUser'
 import { attachCookiesToResponse } from '../utils/jwt'
-import { StatusCodes } from 'http-status-codes'
-
-import crypto from 'crypto'
 import sendVerificationEmail from '../utils/sendVerificationEmail'
 import sendResetPasswordEmail from '../utils/sendResetPasswordEmail'
-import createHash from '../utils/createHash'
-import tokenModel from '../model/tokenModel'
 
 export const register = async (req: express.Request, res: express.Response) => {
   try {
