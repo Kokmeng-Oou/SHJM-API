@@ -34,7 +34,7 @@ router
     ],
     createProduct
   )
-router.get('/search', searchProduct)
+router.get('/search', validationPagination, searchProduct)
 router.get(
   `/${process.env.MEMBER_ACCESS}`,
   [authenticationUser, authorizePermissions('member')],

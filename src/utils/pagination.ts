@@ -4,7 +4,6 @@ type paginationObject = {
   sort: string
   order: string
   filter: {
-    keyword: string
     color: string
     brand: string
     condition: number
@@ -40,5 +39,5 @@ export const fetchPaginationQuery = ({
     query.yearOfManufacture = filter.yearOfManufacture
   if (filter?.price)
     query.price = { $gte: filter.price.min, $lte: filter.price.max }
-  return { query, options }
+  return { options, query }
 }

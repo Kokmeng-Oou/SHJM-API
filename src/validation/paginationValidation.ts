@@ -5,8 +5,8 @@ const paginationQuerySchema = Joi.object({
   limit: Joi.number().integer().max(10).default(10),
   sort: Joi.string().valid('modelName', 'price').default('modelName'),
   order: Joi.string().valid('asc', 'desc').default('asc'),
+  keyword: Joi.string().min(1).optional(),
   filter: Joi.object({
-    keyword: Joi.string().min(1).optional(),
     color: Joi.string().valid('red', 'green', 'blue', 'black', 'white'),
     brand: Joi.string().valid('Honda', 'Yamaha'),
     condition: Joi.number().integer().min(1).max(100),

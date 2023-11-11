@@ -61,35 +61,61 @@ export const searchProduct = async (
   res: express.Response
 ): Promise<void> => {
   try {
-    const limit = 10
-    const page = 1
-    const word = decodeURIComponent((req as any).query.keyword)
-    const keywordRegex = new RegExp(`${word.toString().trim()}`, 'i')
+    const { result, query, options, keywordRegex } = (req as any)
+      .paginationOptionsAndQuery
     const fetchSearchProduct = await productModel
-      .find({
-        modelName: keywordRegex,
-      })
-      .limit(limit * 1)
-      .skip((page - 1) * limit)
-      .sort([['createdAt', -1]])
-    const count = await productModel.countDocuments()
+      .find(query, {}, options)
+      .where({ modelName: keywordRegex })
+    const count = await productModel.countDocuments({ modelName: keywordRegex })
     if (!fetchSearchProduct || !fetchSearchProduct[0])
       throw new BadRequestError("Sorry we couldn't find that product")
     const { meta } = await import('../utils/meta')
+    const MetaResult = meta(result, count)
+
     res.status(StatusCodes.OK).json({
       status: 'success',
       data: fetchSearchProduct,
-      meta: {
-        page: page,
-        limit: limit,
-        total: fetchSearchProduct.length,
-        pages: Math.ceil(fetchSearchProduct.length / limit),
-      },
+      meta: MetaResult,
     })
   } catch (error) {
-    res.status(StatusCodes.BAD_REQUEST).json({ msg: error })
+    res.status(StatusCodes.BAD_REQUEST).json({ msg: 'Error' })
   }
 }
+
+// export const searchProduct = async (
+//   req: express.Request,
+//   res: express.Response
+// ): Promise<void> => {
+//   try {
+//     const limit = 10
+//     const page = 1
+//     const word = decodeURIComponent((req as any).query.keyword)
+//     const keywordRegex = new RegExp(`${word.toString().trim()}`, 'i')
+//     const fetchSearchProduct = await productModel
+//       .find({
+//         modelName: keywordRegex,
+//       })
+//       .limit(limit * 1)
+//       .skip((page - 1) * limit)
+//       .sort([['createdAt', -1]])
+//     const count = await productModel.countDocuments()
+//     if (!fetchSearchProduct || !fetchSearchProduct[0])
+//       throw new BadRequestError("Sorry we couldn't find that product")
+//     const { meta } = await import('../utils/meta')
+//     res.status(StatusCodes.OK).json({
+//       status: 'success',
+//       data: fetchSearchProduct,
+//       meta: {
+//         page: page,
+//         limit: limit,
+//         total: fetchSearchProduct.length,
+//         pages: Math.ceil(fetchSearchProduct.length / limit),
+//       },
+//     })
+//   } catch (error) {
+//     res.status(StatusCodes.BAD_REQUEST).json({ msg: error })
+//   }
+// }
 
 export const updateProduct = async (
   req: express.Request,
