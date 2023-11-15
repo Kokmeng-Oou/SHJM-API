@@ -19,6 +19,7 @@ import {
   validationPagination,
   validationProductIdSchema,
   validationUpdateProductSchema,
+  validationSearchProductPagination,
 } from '../middleware/productMiddleware'
 
 const router = express.Router()

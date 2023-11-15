@@ -3,7 +3,8 @@ import mongoose from 'mongoose'
 export interface IProduct {
   brand: 'Honda' | 'Yamaha' | 'Suzuki'
   modelName: string
-  image: string
+  mainImage: string
+  ImageGallery: object[]
   price: number
   inventory: number
   yearOfManufacture: number | 'Unknown'
@@ -33,9 +34,12 @@ const productSchema = new mongoose.Schema<IProductDocument>(
       type: String,
       required: true,
     },
-    image: {
+    mainImage: {
       type: String,
       required: true,
+    },
+    ImageGallery: {
+      type: [Object],
     },
     price: {
       type: Number,

@@ -2,7 +2,21 @@
   {
     "brand": "Yamaha",
     "modelName": "Nouvo SX 125cc",
-    "image": "/upload/image/example2.jpg",
+    "mainImage": "https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/342730292_197329773082981_8808894412793753318_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF06KqxZWXMRSIkj-qfgCe2IX7ocHUwk1IhfuhwdTCTUgvjmVR8Sm-SDu2bUXwnR2JqtrWRxeuGe6Y3sy_LwLfQ&_nc_ohc=GpgA2v00fDEAX9Vu5S3&_nc_ht=scontent.fpnh5-3.fna&oh=00_AfC4dT0cvFuMMLFrAnw0HKyx37_W9A1qTMt5HAokDccqGw&oe=6557E32E",
+    "ImageGallery": [
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      }
+    ],
     "price": 950,
     "inventory": 15,
     "yearOfManufacture": 2001,
@@ -17,7 +31,21 @@
   {
     "brand": "Suzuki",
     "modelName": "Hayate 125cc",
-    "image": "/upload/image/example3.jpg",
+    "mainImage": "https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/342730292_197329773082981_8808894412793753318_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF06KqxZWXMRSIkj-qfgCe2IX7ocHUwk1IhfuhwdTCTUgvjmVR8Sm-SDu2bUXwnR2JqtrWRxeuGe6Y3sy_LwLfQ&_nc_ohc=GpgA2v00fDEAX9Vu5S3&_nc_ht=scontent.fpnh5-3.fna&oh=00_AfC4dT0cvFuMMLFrAnw0HKyx37_W9A1qTMt5HAokDccqGw&oe=6557E32E",
+    "ImageGallery": [
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      }
+    ],
     "price": 900,
     "inventory": 10,
     "yearOfManufacture": 2002,
@@ -31,7 +59,21 @@
   {
     "brand": "Honda",
     "modelName": "Wave 110cc",
-    "image": "/upload/image/example4.jpg",
+    "mainImage": "https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/342730292_197329773082981_8808894412793753318_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF06KqxZWXMRSIkj-qfgCe2IX7ocHUwk1IhfuhwdTCTUgvjmVR8Sm-SDu2bUXwnR2JqtrWRxeuGe6Y3sy_LwLfQ&_nc_ohc=GpgA2v00fDEAX9Vu5S3&_nc_ht=scontent.fpnh5-3.fna&oh=00_AfC4dT0cvFuMMLFrAnw0HKyx37_W9A1qTMt5HAokDccqGw&oe=6557E32E",
+    "ImageGallery": [
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      }
+    ],
     "price": 800,
     "inventory": 25,
     "yearOfManufacture": 1999,
@@ -45,7 +87,21 @@
   {
     "brand": "Yamaha",
     "modelName": "Mio 115cc",
-    "image": "/upload/image/example5.jpg",
+    "mainImage": "https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/342730292_197329773082981_8808894412793753318_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF06KqxZWXMRSIkj-qfgCe2IX7ocHUwk1IhfuhwdTCTUgvjmVR8Sm-SDu2bUXwnR2JqtrWRxeuGe6Y3sy_LwLfQ&_nc_ohc=GpgA2v00fDEAX9Vu5S3&_nc_ht=scontent.fpnh5-3.fna&oh=00_AfC4dT0cvFuMMLFrAnw0HKyx37_W9A1qTMt5HAokDccqGw&oe=6557E32E",
+    "ImageGallery": [
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      }
+    ],
     "price": 850,
     "inventory": 20,
     "yearOfManufacture": 2000,
@@ -59,7 +115,21 @@
   {
     "brand": "Suzuki",
     "modelName": "Viva 115cc",
-    "image": "/upload/image/example6.jpg",
+    "mainImage": "https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/342730292_197329773082981_8808894412793753318_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF06KqxZWXMRSIkj-qfgCe2IX7ocHUwk1IhfuhwdTCTUgvjmVR8Sm-SDu2bUXwnR2JqtrWRxeuGe6Y3sy_LwLfQ&_nc_ohc=GpgA2v00fDEAX9Vu5S3&_nc_ht=scontent.fpnh5-3.fna&oh=00_AfC4dT0cvFuMMLFrAnw0HKyx37_W9A1qTMt5HAokDccqGw&oe=6557E32E",
+    "ImageGallery": [
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      }
+    ],
     "price": 750,
     "inventory": 30,
     "yearOfManufacture": 1998,
@@ -73,7 +143,21 @@
   {
     "brand": "Honda",
     "modelName": "Dream 125cc",
-    "image": "/upload/image/example7.jpg",
+    "mainImage": "https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/342730292_197329773082981_8808894412793753318_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF06KqxZWXMRSIkj-qfgCe2IX7ocHUwk1IhfuhwdTCTUgvjmVR8Sm-SDu2bUXwnR2JqtrWRxeuGe6Y3sy_LwLfQ&_nc_ohc=GpgA2v00fDEAX9Vu5S3&_nc_ht=scontent.fpnh5-3.fna&oh=00_AfC4dT0cvFuMMLFrAnw0HKyx37_W9A1qTMt5HAokDccqGw&oe=6557E32E",
+    "ImageGallery": [
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      }
+    ],
     "price": 1000,
     "inventory": 5,
     "yearOfManufacture": 2003,
@@ -87,7 +171,21 @@
   {
     "brand": "Yamaha",
     "modelName": "Sirius 115cc",
-    "image": "/upload/image/example8.jpg",
+    "mainImage": "https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/342730292_197329773082981_8808894412793753318_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF06KqxZWXMRSIkj-qfgCe2IX7ocHUwk1IhfuhwdTCTUgvjmVR8Sm-SDu2bUXwnR2JqtrWRxeuGe6Y3sy_LwLfQ&_nc_ohc=GpgA2v00fDEAX9Vu5S3&_nc_ht=scontent.fpnh5-3.fna&oh=00_AfC4dT0cvFuMMLFrAnw0HKyx37_W9A1qTMt5HAokDccqGw&oe=6557E32E",
+    "ImageGallery": [
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      }
+    ],
     "price": 900,
     "inventory": 10,
     "yearOfManufacture": 2002,
@@ -101,7 +199,21 @@
   {
     "brand": "Suzuki",
     "modelName": "Revo 110cc",
-    "image": "/upload/image/example9.jpg",
+    "mainImage": "https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/342730292_197329773082981_8808894412793753318_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF06KqxZWXMRSIkj-qfgCe2IX7ocHUwk1IhfuhwdTCTUgvjmVR8Sm-SDu2bUXwnR2JqtrWRxeuGe6Y3sy_LwLfQ&_nc_ohc=GpgA2v00fDEAX9Vu5S3&_nc_ht=scontent.fpnh5-3.fna&oh=00_AfC4dT0cvFuMMLFrAnw0HKyx37_W9A1qTMt5HAokDccqGw&oe=6557E32E",
+    "ImageGallery": [
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      }
+    ],
     "price": 800,
     "inventory": 15,
     "yearOfManufacture": 2001,
@@ -115,7 +227,21 @@
   {
     "brand": "Honda",
     "modelName": "Air Blade 125cc",
-    "image": "/upload/image/example10.jpg",
+    "mainImage": "https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/342730292_197329773082981_8808894412793753318_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF06KqxZWXMRSIkj-qfgCe2IX7ocHUwk1IhfuhwdTCTUgvjmVR8Sm-SDu2bUXwnR2JqtrWRxeuGe6Y3sy_LwLfQ&_nc_ohc=GpgA2v00fDEAX9Vu5S3&_nc_ht=scontent.fpnh5-3.fna&oh=00_AfC4dT0cvFuMMLFrAnw0HKyx37_W9A1qTMt5HAokDccqGw&oe=6557E32E",
+    "ImageGallery": [
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      }
+    ],
     "price": 1100,
     "inventory": 3,
     "yearOfManufacture": 2004,
@@ -129,7 +255,21 @@
   {
     "brand": "Yamaha",
     "modelName": "Exciter 150cc",
-    "image": "/upload/image/example11.jpg",
+    "mainImage": "https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/342730292_197329773082981_8808894412793753318_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF06KqxZWXMRSIkj-qfgCe2IX7ocHUwk1IhfuhwdTCTUgvjmVR8Sm-SDu2bUXwnR2JqtrWRxeuGe6Y3sy_LwLfQ&_nc_ohc=GpgA2v00fDEAX9Vu5S3&_nc_ht=scontent.fpnh5-3.fna&oh=00_AfC4dT0cvFuMMLFrAnw0HKyx37_W9A1qTMt5HAokDccqGw&oe=6557E32E",
+    "ImageGallery": [
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      },
+      {
+        "src": "https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/343059494_251899890621025_6992156713505510454_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFE-f0yvp6bs_U2eztuas8VSj-ftNgLnkFKP5-02AueQbEm43D6PaxvTRUYhOUCjxspMCTGFGjNPrvZ8pgMW7yL&_nc_ohc=aBQgpt9XuPkAX_Qmtey&_nc_ht=scontent.fpnh18-1.fna&oh=00_AfBuZZ0cE8Zl5hAS6U4u55Wx7kND0rgSL1Mk-dDHvrgrZw&oe=65572336",
+        "alt": "Nouvo Image1"
+      }
+    ],
     "price": 1200,
     "inventory": 2,
     "yearOfManufacture": 2005,

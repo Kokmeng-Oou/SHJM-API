@@ -33,12 +33,32 @@ export async function validationPagination(
   try {
     const result = await paginationQuerySchema.validateAsync(req.query)
     const { query, options } = fetchPaginationQuery(result)
-    ;(req as any).paginationOptionsAndQuery = { result, query, options }
-
     if (!req.query.keyword) {
       ;(req as any).paginationOptionsAndQuery = { result, query, options }
-      next()
+      return next()
     }
+    const word = decodeURIComponent((req.query as any).keyword)
+    const keywordRegex = new RegExp(`${word.toString().trim()}`, 'i')
+    ;(req as any).paginationOptionsAndQuery = {
+      result,
+      query,
+      options,
+      keywordRegex,
+    }
+    next()
+  } catch (error) {
+    throw new BadRequestError('Invalid data')
+  }
+}
+
+export async function validationSearchProductPagination(
+  req: express.Request,
+  res: express.Response,
+  next: express.NextFunction
+) {
+  try {
+    const result = await paginationQuerySchema.validateAsync(req.query)
+    const { query, options } = fetchPaginationQuery(result)
     const word = decodeURIComponent((req.query as any).keyword)
     const keywordRegex = new RegExp(`${word.toString().trim()}`, 'i')
     ;(req as any).paginationOptionsAndQuery = {

@@ -1,6 +1,4 @@
 import Joi from 'joi'
-import userModel from '../model/userModel'
-import { BadRequestError } from '../err'
 
 export const registerSchema = Joi.object({
   name: Joi.string().min(3).alphanum().required().messages({

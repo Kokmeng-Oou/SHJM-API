@@ -5,7 +5,8 @@ import Joi from 'joi'
 export const createProductSchema = Joi.object({
   brand: Joi.string().valid('Honda', 'Yamaha', 'Suzuki').required(),
   modelName: Joi.string().required(),
-  image: Joi.string().required(),
+  mainImage: Joi.string().required(),
+  ImageGallery: Joi.array().required(),
   price: Joi.number().positive().required(),
   inventory: Joi.number().integer().min(0).required(),
   yearOfManufacture: Joi.alternatives()
@@ -26,7 +27,8 @@ export const createProductSchema = Joi.object({
 export const updateProductSchema = Joi.object({
   brand: Joi.string().valid('Honda', 'Yamaha', 'Suzuki').optional(),
   modelName: Joi.string().optional(),
-  image: Joi.string().optional(),
+  mainImage: Joi.string().required(),
+  imageGallery: Joi.array().required(),
   price: Joi.number().positive().optional(),
   inventory: Joi.number().integer().min(0).optional(),
   yearOfManufacture: Joi.alternatives()
